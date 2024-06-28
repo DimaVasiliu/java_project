@@ -6,7 +6,7 @@ public class menu {
         System.out.print("\n=====Customer Related options========");
         System.out.print("\n=====================================");
         System.out.print("\n1. Add new Customer details");
-        System.out.print("\n2. Retieve Customer details");
+        System.out.print("\n2. Retrieve Customer details");
         System.out.print("\n3. Update Customer details");
         System.out.print("\n4. Delete Customer details");
         System.out.print("\n5. Exit");
@@ -20,7 +20,7 @@ public class menu {
         System.out.print("\n=======Fulltime staff Options========");
         System.out.print("\n=====================================");
         System.out.print("\n1. Add new FT staff details");
-        System.out.print("\n2. Retieve FT staff details");
+        System.out.print("\n2. Retrieve FT staff details");
         System.out.print("\n3. Update FT staff details");
         System.out.print("\n4. Delete FT staff details");
         System.out.print("\n5. Exit");
@@ -35,7 +35,7 @@ public class menu {
         System.out.print("\n=======Parttime staff Options========");
         System.out.print("\n=====================================");
         System.out.print("\n1. Add new PT staff details");
-        System.out.print("\n2. Retieve PT staff details");
+        System.out.print("\n2. Retrieve PT staff details");
         System.out.print("\n3. Update PT staff details");
         System.out.print("\n4. Delete PT staff details");
         System.out.print("\n5. Exit");
@@ -67,6 +67,4 @@ public class menu {
         System.out.print("\nPlease enter your choice (1-5): ");
         
     }
-
-
 }

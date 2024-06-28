@@ -1,7 +1,7 @@
 public class fulltimestaff extends person {
     
     private double salary;
-    public fulltimestaff() {}
+    public fulltimestaff(String iuraBlyadi, String male, String london, int i, String mail, String number, int i1, double v) {}
     public fulltimestaff(double salary) {
         this.salary = salary;
     }

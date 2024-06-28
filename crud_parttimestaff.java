@@ -2,14 +2,14 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class crud_parttimestaff {
-    private ArrayList<parttimestaff> pts_data= new ArrayList<parttimestaff>();
+    private final ArrayList<parttimestaff> pts_data= new ArrayList<>();
     Scanner input=new  Scanner(System.in);
 
     public crud_parttimestaff()
     {
-        parttimestaff s1=new parttimestaff();
-        parttimestaff s2=new parttimestaff();
-        parttimestaff s3=new parttimestaff();
+        parttimestaff s1=new parttimestaff("Dima", "Male", "London", 32, "example@gmail.com", "0011", 30, 33.0);
+        parttimestaff s2=new parttimestaff("Lily", "Female", "London", 28, "example@gmail.com", "01010", 30, 40.0);
+        parttimestaff s3=new parttimestaff("Iura blyadi", "Male", "London", 23, "example@gmail.com", "01200", 23, 30.0);
         pts_data.add(s1);
         pts_data.add(s2);
         pts_data.add(s3);
@@ -42,7 +42,7 @@ public class crud_parttimestaff {
                     break;
                 }
             }
-            if (found==false)
+            if (!found)
             {System.out.println("\nSorry not found");}
         }
         catch(Exception ex)
@@ -51,7 +51,7 @@ public class crud_parttimestaff {
         }
     }
 
-    public void retieve()
+    public void retrieve()
     {
         System.out.println("Enter the phone number of the PT staff ");
         String entered_phone=input.nextLine();
@@ -64,7 +64,7 @@ public class crud_parttimestaff {
                 break;
             }
         }
-        if (found==false)
+        if (!found)
         {System.out.println("\nSorry not found.");}
     }
 
@@ -78,17 +78,17 @@ public class crud_parttimestaff {
             {
                 found=true;
                 x.print();
-                System.out.print("\nAre you sure to delete (yes/no)");
+                System.out.print("\nAre you sure to delete (yes/no): ");
                 String response=input.nextLine();
-                if (response.toLowerCase().equals("yes"))
+                if (response.equalsIgnoreCase("yes"))
                 {
                     pts_data.remove(x);
-                    System.out.print("\nData got deleted successfully");
+                    System.out.print("\nData got deleted successfully.");
                 }
                 break;
             }
         }
-        if (found==false)
+        if (!found)
         {System.out.println("\nSorry not found.");}
     }
 

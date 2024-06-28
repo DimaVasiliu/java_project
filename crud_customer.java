@@ -51,9 +51,9 @@ public class crud_customer {
        }
     }
 
-    public void retieve()
+    public void retrieve()
     {
-        System.out.println("Enter The phone number of the customer ");
+        System.out.println("Enter the phone number of the customer ");
         String entered_phone=input.nextLine();
         boolean found=false;
         for (customer x : customer_data) {
